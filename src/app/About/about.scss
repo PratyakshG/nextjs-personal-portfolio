@@ -1,0 +1,71 @@
+@import "../../app/globals.css";
+
+.about {
+  .about_wrapper {
+    // border-top: 2px solid grey;
+    // border-bottom: 2px solid grey;
+
+    img {
+      aspect-ratio: 1 / 1;
+      width: 300px;
+      border-radius: 50%;
+
+      @media screen and (max-width: 768px) {
+        width: 240px;
+      }
+    }
+
+    .about_heading {
+      span {
+        color: #a9a9a9;
+        letter-spacing: 2px;
+      }
+    }
+
+    .about_text {
+      span {
+        // font-family: "poppins", "helvetica";
+        font-weight: 300;
+      }
+    }
+  }
+
+  .about_btn {
+    border: 1px solid grey;
+    border-radius: 100px;
+    transition: all 300ms ease-in-out;
+
+    a {
+      color: grey;
+      margin: 0 10px 0 10px;
+      transition: all 300ms ease-in-out;
+    }
+
+    svg {
+      fill: grey;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      transition: all 300ms ease-in-out;
+      .path {
+        fill: black;
+      }
+    }
+
+    &:hover {
+      background: white;
+
+      a {
+        color: black;
+      }
+
+      svg {
+        border: 1px solid black;
+        border-radius: 50%;
+        fill: white;
+        .path {
+          fill: black;
+        }
+      }
+    }
+  }
+}

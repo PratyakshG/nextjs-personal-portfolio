@@ -1,0 +1,45 @@
+@import "../../app/globals.css";
+
+.card {
+  border-top: 1px solid gray;
+  background: #000;
+  transition: all ease-in-out;
+
+  &:hover {
+    .title {
+      transform: translateX(30px);
+      opacity: 0.3;
+    }
+
+    .desc {
+      z-index: inherit;
+      opacity: 1;
+    }
+  }
+}
+
+.card:nth-last-child(1) {
+  border-bottom: 1px solid gray;
+}
+
+.title {
+  transition: all 500ms ease-in-out;
+}
+
+.content {
+  color: #a3a3a3;
+  image {
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+.desc_box {
+  // z-index: 999;
+}
+
+.desc {
+  color: #fdfdfd80;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+}
