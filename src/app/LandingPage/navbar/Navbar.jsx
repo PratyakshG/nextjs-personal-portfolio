@@ -61,7 +61,7 @@ const Navbar = () => {
                   setActive(!active);
                   setTimeout(() => {
                     setActive(false);
-                  }, 10000);
+                  }, 5000);
                 }}
               >
                 MENU
