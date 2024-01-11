@@ -48,7 +48,7 @@ const Contact = () => {
       >
         <div className="contact_container h-[80vh] w-[90vw] flex flex-col">
           <div className="contact_wrapper flex flex-col items-center justify-center">
-            <div className="display_text flex flex-col items-center p-5 md:p-[10px] font-display font-semibold text-[12vw] md:text-[10vw]">
+            <div className="display_text flex flex-col items-center p-5 md:p-[10px] font-semibold text-[12vw] md:text-[10vw]">
               <span>Wish to</span>
               <span>work together?</span>
             </div>
@@ -64,25 +64,25 @@ const Contact = () => {
 
           {/* footer and links */}
           <div className="footer flex relative items-center justify-center">
-            <div className="socials flex flex-col md:flex-row w-full md:gap-3 p-5 justify-between items-baseline">
+            <div className="socials flex flex-col md:flex-row w-full md:gap-3 lg:p-5 justify-between items-baseline">
               <div className="location flex hover:scale-[1.1] cursor-pointer">
-                <span className="flex items-baseline justify-center gap-1 md:text-lg">
+                <span className="flex items-baseline justify-center gap-1 lg:text-lg">
                   <FaLocationDot /> India
                 </span>
               </div>
 
-              <ul className="flex items-center gap-2 md:gap-5">
+              <ul className="flex items-center gap-2 lg:gap-5">
                 {socials.map((item, index) => (
                   <li
                     key={item}
-                    className="flex items-center justify-center md:text-lg md:border border-black md:py-3 md:px-5"
+                    className="flex items-center justify-center lg:text-lg md:border border-black md:px-2 md:py-1 lg:py-3 lg:px-5"
                   >
                     <Link href={item.url}>{item.name}</Link>
                   </li>
                 ))}
               </ul>
 
-              <div className="top md:text-lg hidden w-fit md:flex hover:scale-[1.1] cursor-pointer">
+              <div className="top lg:text-lg hidden w-fit md:flex hover:scale-[1.1] cursor-pointer">
                 <span
                   onClick={() => scrollTo(top)}
                   className="flex items-baseline justify-center"

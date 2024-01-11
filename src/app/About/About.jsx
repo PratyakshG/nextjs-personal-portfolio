@@ -57,11 +57,11 @@ const About = () => {
             className="text_box md:w-1/2 gap-1 md:gap-3 flex flex-col"
           >
             <div className="about_heading">
-              <span className="flex leading-none font-display text-xl md:text-3xl">
+              <span className="flex leading-none text-xl md:text-3xl">
                 (About Me)
               </span>
             </div>
-            <div className="about_text flex flex-col text-base xl:text-2xl font-bold font-mono gap-5 md:gap-10">
+            <div className="about_text flex flex-col text-base xl:text-xl font-bold font-mono gap-5 md:gap-10">
               <span>
                 Hi! I am a Frontend Developer and I like to code, all those
                 visually appealing, creative ideas into reality, and sometimes
@@ -74,13 +74,13 @@ const About = () => {
                 After all, at the end of the day, its night. ;)
               </span>
 
-              <motion.button className="about_btn flex items-center justify-center w-fit p-1 md:p-2 gap-1 cursor-pointer">
+              <motion.button className="about_btn flex items-center justify-center w-fit p-1 lg:p-2 gap-1 cursor-pointer">
                 <motion.a
                   onClick={() => {
                     const elem = document.getElementById("CONTACT");
                     elem.scrollIntoView();
                   }}
-                  className="flex text-base md:text-[22px]"
+                  className="flex text-base lg:text-xl"
                 >
                   Let's Talk
                 </motion.a>

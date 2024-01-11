@@ -59,24 +59,26 @@ const LandingPage = () => {
   return (
     <div>
       <div className="landingPage flex flex-col gap-10 h-[100vh] w-[100vw] items-center p-5 lg:p-0">
-        {/* <Navbar /> */}
+        {/* Landing Page main section */}
         <ScrollText />
+
+        {/* Footer Section */}
         <motion.div
           variants={itemVariants}
           initial="initial"
           animate="animate"
-          className="footer m-auto w-full lg:w-[95vw] flex flex-col lg:flex-row lg:items-center font-normal text-sm lg:text-lg justify-between gap-5"
+          className="footer m-auto w-full lg:w-[95vw] flex flex-col md:flex-row md:items-center font-normal text-sm lg:text-lg justify-between gap-5"
         >
-          <motion.div className="date flex flex-col lg:flex-row lg:gap-10 w-1/2">
+          <motion.div className="date flex flex-col lg:flex-row lg:gap-5 w-1/2">
             <div className="year">{date.getFullYear()} ©</div>
             <div className="time">
               {time} {ampm}
             </div>
           </motion.div>
 
-          <div className="flex lg:w-2/3 justify-between items-baseline">
+          <div className="flex md:w-2/3 justify-between items-baseline">
             <motion.button
-              className="explore w-fit flex items-center justify-center lg:text-[22px]"
+              className="explore w-fit flex items-center justify-center lg:text-lg"
               whileHover={hover}
               transition={{
                 duration: 0.3,

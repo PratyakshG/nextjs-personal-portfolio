@@ -43,13 +43,13 @@ const Navbar = () => {
           onClick={() => {
             scrollTo(top);
           }}
-          className="name w-fit text-base md:text-2xl font-[500]"
+          className="name w-fit text-base md:text-lg"
         >
           Pratyaksh Gupta
         </motion.a>
 
         {/* MENU BAR */}
-        <motion.div className="menu flex lg:flex-col text-xs md:text-2xl font-[500] relative">
+        <motion.div className="menu flex lg:flex-col text-xs md:text-lg relative">
           {!active ? (
             <div className="btn flex flex-col">
               <motion.button
@@ -61,7 +61,7 @@ const Navbar = () => {
                   setActive(!active);
                   setTimeout(() => {
                     setActive(false);
-                  }, 3000);
+                  }, 10000);
                 }}
               >
                 MENU

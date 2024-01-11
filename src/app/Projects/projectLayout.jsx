@@ -22,16 +22,16 @@ const Layout = ({ title, desc, type, link }) => {
         <motion.div className="flex w-full relative items-center justify-between">
           {/* title of the project */}
           <motion.div className="content flex flex-col h-full w-full">
-            <div className="title text-[8svh] leading-none tracking-tight font-[500] uppercase">
+            <div className="title text-[10dvw] md:text-[6dvw] lg:text-[4dvw] leading-none font-[500] uppercase">
               {title}
             </div>
-            <div className="desc hidden md:block text-lg leading-none tracking-wider ml-8 uppercase">
+            <div className="desc hidden lg:block text-lg leading-none tracking-wider ml-8 uppercase">
               {desc}
             </div>
           </motion.div>
 
           {/* about the project */}
-          <div className="desc_box flex flex-col h-full w-[50vh] md:gap-1 text-right justify-center text-sm md:text-xl md:mr-5">
+          <div className="desc_box flex flex-col h-full w-[50vh] gap-1 text-right justify-center text-xs md:text-base lg:text-xl md:mr-5">
             <div className="type font-normal">{type}</div>
             <div className="links flex w-full">
               <div className="visit flex w-full justify-end">

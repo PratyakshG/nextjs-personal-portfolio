@@ -47,7 +47,7 @@ const Links = ({ active, setActive, children }) => {
   const items = ["PROJECTS", "SKILLS", "ABOUT", "CONTACT"];
 
   return (
-    <motion.div className="links flex gap-3 md:gap-8 items-baseline text-xs md:text-2xl font-[500] font-[Afacad]">
+    <motion.div className="links flex gap-3 md:gap-8 items-baseline text-xs md:text-lg font-[Afacad]">
       {items.map((item, index) => (
         <motion.a
           key={index}

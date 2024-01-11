@@ -89,7 +89,7 @@ const Skills = () => {
             viewport={{
               once: "true",
             }}
-            className="flex items-center md:border-none border-gray-500 border-t border-b justify-center p-2 md:p-4 gap-2 md:gap-5"
+            className="flex items-center md:border-none border-gray-500 border-t border-b justify-center p-2 md:p-3 lg:p-4 gap-2 lg:gap-5"
           >
             {item}
             <span className="font-[poppins]">{skill[index]}</span>
