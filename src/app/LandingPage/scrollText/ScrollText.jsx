@@ -41,7 +41,7 @@ const itemVariants = {
 const ScrollText = () => {
   return (
     <div className="scroll_wrapper flex relative w-full md:h-[85vh] justify-center font-[Afacad]">
-      <motion.div className="slidingTextContainer flex flex-col w-[95vw] leading-none mt-[25vh] text-5xl md:text-[11vw]">
+      <motion.div className="slidingTextContainer flex flex-col w-[95vw] leading-none mt-[25vh] text-[15dvw] md:text-[11vw]">
         <motion.span
           variants={itemVariants}
           initial="initial"
