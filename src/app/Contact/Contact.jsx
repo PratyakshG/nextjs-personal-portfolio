@@ -44,7 +44,7 @@ const Contact = () => {
         variants={contactVariants}
         initial="initial"
         whileInView="animate"
-        className="contact flex p-10 h-[90dvh] w-[100dvw] md:w-full items-center justify-center pt-[5vh]"
+        className="contact flex p-10 h-[90vh] w-[100dvw] md:w-full items-center justify-center pt-[5vh] md:mt-[10vh]"
       >
         <div className="contact_container h-[70dvh] md:h-[80dvh] w-[90vw] flex flex-col">
           <div className="contact_wrapper flex flex-col items-center justify-center">

@@ -57,8 +57,8 @@ const LandingPage = () => {
   const ampm = date.getHours() < 12 ? "AM" : "PM";
 
   return (
-    <div>
-      <div className="landingPage flex flex-col gap-10 h-[100vh] w-[100vw] items-center p-5 lg:p-0">
+    <>
+      <div className="landingPage flex flex-col h-[100vh] w-[100vw] items-center md:justify-between p-3 lg:p-0 gap-10">
         {/* Landing Page main section */}
         <ScrollText />
 
@@ -67,7 +67,7 @@ const LandingPage = () => {
           variants={itemVariants}
           initial="initial"
           animate="animate"
-          className="footer m-auto w-full lg:w-[95vw] flex flex-col md:flex-row md:items-center font-normal text-sm lg:text-lg justify-between gap-5"
+          className="footer md:m-auto w-full lg:w-[95vw] flex flex-col md:flex-row md:items-center font-normal text-sm lg:text-lg justify-between gap-5"
         >
           <motion.div className="date flex flex-col lg:flex-row lg:gap-5 w-1/2">
             <div className="year">{date.getFullYear()} ©</div>
@@ -127,7 +127,7 @@ const LandingPage = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </>
   );
 };
 

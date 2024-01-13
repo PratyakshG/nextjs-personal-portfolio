@@ -50,7 +50,7 @@ const variants = {
 const Projects = () => {
   return (
     <>
-      <div className="projects flex flex-col items-center md:items-start justify-center md:mt-[10vh] h-[90svh] w-[95vw]">
+      <div className="projects flex flex-col items-center md:items-start justify-center md:pt-[5vh] h-[100vh] w-[95vw]">
         {projects.map(({ title, type, desc, link }, index) => (
           <Layout
             key={index}

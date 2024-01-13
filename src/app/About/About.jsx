@@ -30,7 +30,7 @@ const variants = {
 const About = () => {
   return (
     <>
-      <div className="about md:h-[100vh] w-[95vw] flex flex-col items-center justify-center p-5 md:p-0 md:gap-20 relative m-auto">
+      <div className="about min-h-[100vh] w-[95vw] flex flex-col items-center justify-center p-5 pt-[10vh] md:pt-0 md:p-0 md:gap-20 relative m-auto">
         <div className="about_wrapper flex flex-col md:flex-row gap-5 md:gap-20">
           <motion.div
             variants={variants}

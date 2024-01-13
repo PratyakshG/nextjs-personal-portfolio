@@ -48,9 +48,12 @@ body {
 
 section {
   font-family: "Afacad", sans-serif;
-  scroll-snap-align: center;
-  /* min-height: 100vh; */
+  scroll-snap-align: end;
+  /* min-height: 100dvh; */
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {

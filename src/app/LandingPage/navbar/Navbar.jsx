@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <motion.div
       className={`navbar flex m-auto w-[100vw] ${
-        active ? "h-full md:h-[12dvh]" : "h-[8vh] md:h-[12vh]"
+        active ? "h-full md:h-[10dvh]" : "h-[8vh] md:h-[10vh]"
       } top-0 items-center justify-center fixed`}
     >
       <motion.div

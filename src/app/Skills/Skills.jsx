@@ -76,7 +76,7 @@ const Skills = () => {
   ];
 
   return (
-    <motion.div className="skills p-5 md:p-10 w-full gap-5">
+    <motion.div className="skills p-5 md:p-10 h-full w-full gap-5">
       {logos.map((item, index) => (
         <ul key={index}>
           <motion.li
@@ -89,10 +89,10 @@ const Skills = () => {
             viewport={{
               once: "true",
             }}
-            className="flex items-center md:border-none border-gray-500 border-t border-b justify-center p-2 md:p-3 lg:p-4 gap-2 lg:gap-5"
+            className="flex items-center border md:border-none border-gray-500 md:border-t md:border-b justify-center p-2 md:p-3 xl:p-4 gap-2 lg:gap-5 text-base md:text-lg lg:text-2xl"
           >
             {item}
-            <span className="font-[poppins]">{skill[index]}</span>
+            <span className="font-[poppins] text-xs md:text-base xl:text-lg">{skill[index]}</span>
           </motion.li>
         </ul>
       ))}
