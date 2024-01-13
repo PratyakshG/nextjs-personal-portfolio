@@ -34,8 +34,18 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <motion.div className="navbar flex m-auto w-[100vw] h-[12vh] top-0 items-center justify-center fixed">
-      <motion.div className="nav_wrapper flex w-[95vw] m-auto font-[Afacad] items-baseline justify-between relative">
+    <motion.div
+      className={`navbar flex m-auto w-[100vw] ${
+        active ? "h-full md:h-[12dvh]" : "h-[8vh] md:h-[12vh]"
+      } top-0 items-center justify-center fixed`}
+    >
+      <motion.div
+        className={`nav_wrapper ${
+          active
+            ? "h-full flex-col md:flex-row md:gap-0 gap-10 items-start md:items-center md:justify-between"
+            : "items-center justify-between"
+        } flex w-[95vw] m-auto font-[Afacad] relative`}
+      >
         <motion.a
           variants={itemVariants}
           initial="initial"
@@ -43,13 +53,19 @@ const Navbar = () => {
           onClick={() => {
             scrollTo(top);
           }}
-          className="name w-fit text-base md:text-lg"
+          className={`name ${
+            active ? "w-full md:w-fit" : "w-fit"
+          } h-[8vh] md:h-fit flex items-center text-base md:text-lg`}
         >
           Pratyaksh Gupta
         </motion.a>
 
         {/* MENU BAR */}
-        <motion.div className="menu flex lg:flex-col text-xs md:text-lg relative">
+        <motion.div
+          className={`menu flex ${
+            active ? "w-full md:w-fit" : ""
+          } lg:flex-col text-xs md:text-lg relative`}
+        >
           {!active ? (
             <div className="btn flex flex-col">
               <motion.button
@@ -59,9 +75,6 @@ const Navbar = () => {
                 animate={!active ? "closed" : "exit"}
                 onClick={() => {
                   setActive(!active);
-                  setTimeout(() => {
-                    setActive(false);
-                  }, 5000);
                 }}
               >
                 MENU

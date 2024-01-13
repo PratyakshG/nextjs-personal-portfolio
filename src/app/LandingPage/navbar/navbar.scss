@@ -8,19 +8,22 @@
   .nav_wrapper {
     .links {
       display: flex;
-      a {
-        &::after {
-          display: block;
-          content: "";
-          transform: scaleX(0);
-          border-bottom: 1px solid #fff;
-          transition: transform 250ms ease-in-out;
-          transform-origin: right;
-        }
+      
+      @media screen and (min-width: 768px) {
+        a {
+          &::after {
+            display: block;
+            content: "";
+            transform: scaleX(0);
+            border-bottom: 1px solid #fff;
+            transition: transform 250ms ease-in-out;
+            transform-origin: right;
+          }
 
-        &:hover::after {
-          transform: scaleX(1);
-          transform-origin: left;
+          &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
         }
       }
     }
