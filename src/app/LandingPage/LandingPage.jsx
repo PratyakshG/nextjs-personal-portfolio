@@ -14,7 +14,14 @@ var date = new Date();
 
 function updateTime() {
   const time = new Date();
-  const hours = time.getHours() == 12 ? 12 : 0 ? 12 : time.getHours() % 12;
+  let hours = time.getHours();
+  // time.getHours() == 12 ? 12 : 0 ? 12 : time.getHours() % 12;
+
+  if (hours == 0 || hours == 12) {
+    hours = 12;
+  } else {
+    hours = time.getHours() % 12;
+  }
   var minutes = time.getMinutes();
   // const seconds = time.getSeconds();
 
